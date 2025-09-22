@@ -1,0 +1,577 @@
+Year,Feature_Name,Landcover_Class
+2025,Island County,Open Space
+2025,Island County,Low Intensity
+2025,Island County,Medium Intensity
+2025,Island County,High Intensity
+2025,Island County,Forest
+2025,Island County,Agriculture
+2025,Clallam County,Open Space
+2025,Clallam County,Low Intensity
+2025,Clallam County,Medium Intensity
+2025,Clallam County,High Intensity
+2025,Clallam County,Forest
+2025,Clallam County,Agriculture
+2025,King County,Open Space
+2025,King County,Low Intensity
+2025,King County,Medium Intensity
+2025,King County,High Intensity
+2025,King County,Forest
+2025,King County,Agriculture
+2025,Snohomish County,Open Space
+2025,Snohomish County,Low Intensity
+2025,Snohomish County,Medium Intensity
+2025,Snohomish County,High Intensity
+2025,Snohomish County,Forest
+2025,Snohomish County,Agriculture
+2025,Whatcom County,Open Space
+2025,Whatcom County,Low Intensity
+2025,Whatcom County,Medium Intensity
+2025,Whatcom County,High Intensity
+2025,Whatcom County,Forest
+2025,Whatcom County,Agriculture
+2025,Pierce County,Open Space
+2025,Pierce County,Low Intensity
+2025,Pierce County,Medium Intensity
+2025,Pierce County,High Intensity
+2025,Pierce County,Forest
+2025,Pierce County,Agriculture
+2025,Thurston County,Open Space
+2025,Thurston County,Low Intensity
+2025,Thurston County,Medium Intensity
+2025,Thurston County,High Intensity
+2025,Thurston County,Forest
+2025,Thurston County,Agriculture
+2025,Jefferson County,Open Space
+2025,Jefferson County,Low Intensity
+2025,Jefferson County,Medium Intensity
+2025,Jefferson County,High Intensity
+2025,Jefferson County,Forest
+2025,Jefferson County,Agriculture
+2025,Skagit County,Open Space
+2025,Skagit County,Low Intensity
+2025,Skagit County,Medium Intensity
+2025,Skagit County,High Intensity
+2025,Skagit County,Forest
+2025,Skagit County,Agriculture
+2025,San Juan County,Open Space
+2025,San Juan County,Low Intensity
+2025,San Juan County,Medium Intensity
+2025,San Juan County,High Intensity
+2025,San Juan County,Forest
+2025,San Juan County,Agriculture
+2025,Mason County,Open Space
+2025,Mason County,Low Intensity
+2025,Mason County,Medium Intensity
+2025,Mason County,High Intensity
+2025,Mason County,Forest
+2025,Mason County,Agriculture
+2025,Kitsap County,Open Space
+2025,Kitsap County,Low Intensity
+2025,Kitsap County,Medium Intensity
+2025,Kitsap County,High Intensity
+2025,Kitsap County,Forest
+2025,Kitsap County,Agriculture
+2035,Island County,Open Space
+2035,Island County,Low Intensity
+2035,Island County,Medium Intensity
+2035,Island County,High Intensity
+2035,Island County,Forest
+2035,Island County,Agriculture
+2035,Clallam County,Open Space
+2035,Clallam County,Low Intensity
+2035,Clallam County,Medium Intensity
+2035,Clallam County,High Intensity
+2035,Clallam County,Forest
+2035,Clallam County,Agriculture
+2035,King County,Open Space
+2035,King County,Low Intensity
+2035,King County,Medium Intensity
+2035,King County,High Intensity
+2035,King County,Forest
+2035,King County,Agriculture
+2035,Snohomish County,Open Space
+2035,Snohomish County,Low Intensity
+2035,Snohomish County,Medium Intensity
+2035,Snohomish County,High Intensity
+2035,Snohomish County,Forest
+2035,Snohomish County,Agriculture
+2035,Whatcom County,Open Space
+2035,Whatcom County,Low Intensity
+2035,Whatcom County,Medium Intensity
+2035,Whatcom County,High Intensity
+2035,Whatcom County,Forest
+2035,Whatcom County,Agriculture
+2035,Pierce County,Open Space
+2035,Pierce County,Low Intensity
+2035,Pierce County,Medium Intensity
+2035,Pierce County,High Intensity
+2035,Pierce County,Forest
+2035,Pierce County,Agriculture
+2035,Thurston County,Open Space
+2035,Thurston County,Low Intensity
+2035,Thurston County,Medium Intensity
+2035,Thurston County,High Intensity
+2035,Thurston County,Forest
+2035,Thurston County,Agriculture
+2035,Jefferson County,Open Space
+2035,Jefferson County,Low Intensity
+2035,Jefferson County,Medium Intensity
+2035,Jefferson County,High Intensity
+2035,Jefferson County,Forest
+2035,Jefferson County,Agriculture
+2035,Skagit County,Open Space
+2035,Skagit County,Low Intensity
+2035,Skagit County,Medium Intensity
+2035,Skagit County,High Intensity
+2035,Skagit County,Forest
+2035,Skagit County,Agriculture
+2035,San Juan County,Open Space
+2035,San Juan County,Low Intensity
+2035,San Juan County,Medium Intensity
+2035,San Juan County,High Intensity
+2035,San Juan County,Forest
+2035,San Juan County,Agriculture
+2035,Mason County,Open Space
+2035,Mason County,Low Intensity
+2035,Mason County,Medium Intensity
+2035,Mason County,High Intensity
+2035,Mason County,Forest
+2035,Mason County,Agriculture
+2035,Kitsap County,Open Space
+2035,Kitsap County,Low Intensity
+2035,Kitsap County,Medium Intensity
+2035,Kitsap County,High Intensity
+2035,Kitsap County,Forest
+2035,Kitsap County,Agriculture
+2045,Island County,Open Space
+2045,Island County,Low Intensity
+2045,Island County,Medium Intensity
+2045,Island County,High Intensity
+2045,Island County,Forest
+2045,Island County,Agriculture
+2045,Clallam County,Open Space
+2045,Clallam County,Low Intensity
+2045,Clallam County,Medium Intensity
+2045,Clallam County,High Intensity
+2045,Clallam County,Forest
+2045,Clallam County,Agriculture
+2045,King County,Open Space
+2045,King County,Low Intensity
+2045,King County,Medium Intensity
+2045,King County,High Intensity
+2045,King County,Forest
+2045,King County,Agriculture
+2045,Snohomish County,Open Space
+2045,Snohomish County,Low Intensity
+2045,Snohomish County,Medium Intensity
+2045,Snohomish County,High Intensity
+2045,Snohomish County,Forest
+2045,Snohomish County,Agriculture
+2045,Whatcom County,Open Space
+2045,Whatcom County,Low Intensity
+2045,Whatcom County,Medium Intensity
+2045,Whatcom County,High Intensity
+2045,Whatcom County,Forest
+2045,Whatcom County,Agriculture
+2045,Pierce County,Open Space
+2045,Pierce County,Low Intensity
+2045,Pierce County,Medium Intensity
+2045,Pierce County,High Intensity
+2045,Pierce County,Forest
+2045,Pierce County,Agriculture
+2045,Thurston County,Open Space
+2045,Thurston County,Low Intensity
+2045,Thurston County,Medium Intensity
+2045,Thurston County,High Intensity
+2045,Thurston County,Forest
+2045,Thurston County,Agriculture
+2045,Jefferson County,Open Space
+2045,Jefferson County,Low Intensity
+2045,Jefferson County,Medium Intensity
+2045,Jefferson County,High Intensity
+2045,Jefferson County,Forest
+2045,Jefferson County,Agriculture
+2045,Skagit County,Open Space
+2045,Skagit County,Low Intensity
+2045,Skagit County,Medium Intensity
+2045,Skagit County,High Intensity
+2045,Skagit County,Forest
+2045,Skagit County,Agriculture
+2045,San Juan County,Open Space
+2045,San Juan County,Low Intensity
+2045,San Juan County,Medium Intensity
+2045,San Juan County,High Intensity
+2045,San Juan County,Forest
+2045,San Juan County,Agriculture
+2045,Mason County,Open Space
+2045,Mason County,Low Intensity
+2045,Mason County,Medium Intensity
+2045,Mason County,High Intensity
+2045,Mason County,Forest
+2045,Mason County,Agriculture
+2045,Kitsap County,Open Space
+2045,Kitsap County,Low Intensity
+2045,Kitsap County,Medium Intensity
+2045,Kitsap County,High Intensity
+2045,Kitsap County,Forest
+2045,Kitsap County,Agriculture
+2055,Island County,Open Space
+2055,Island County,Low Intensity
+2055,Island County,Medium Intensity
+2055,Island County,High Intensity
+2055,Island County,Forest
+2055,Island County,Agriculture
+2055,Clallam County,Open Space
+2055,Clallam County,Low Intensity
+2055,Clallam County,Medium Intensity
+2055,Clallam County,High Intensity
+2055,Clallam County,Forest
+2055,Clallam County,Agriculture
+2055,King County,Open Space
+2055,King County,Low Intensity
+2055,King County,Medium Intensity
+2055,King County,High Intensity
+2055,King County,Forest
+2055,King County,Agriculture
+2055,Snohomish County,Open Space
+2055,Snohomish County,Low Intensity
+2055,Snohomish County,Medium Intensity
+2055,Snohomish County,High Intensity
+2055,Snohomish County,Forest
+2055,Snohomish County,Agriculture
+2055,Whatcom County,Open Space
+2055,Whatcom County,Low Intensity
+2055,Whatcom County,Medium Intensity
+2055,Whatcom County,High Intensity
+2055,Whatcom County,Forest
+2055,Whatcom County,Agriculture
+2055,Pierce County,Open Space
+2055,Pierce County,Low Intensity
+2055,Pierce County,Medium Intensity
+2055,Pierce County,High Intensity
+2055,Pierce County,Forest
+2055,Pierce County,Agriculture
+2055,Thurston County,Open Space
+2055,Thurston County,Low Intensity
+2055,Thurston County,Medium Intensity
+2055,Thurston County,High Intensity
+2055,Thurston County,Forest
+2055,Thurston County,Agriculture
+2055,Jefferson County,Open Space
+2055,Jefferson County,Low Intensity
+2055,Jefferson County,Medium Intensity
+2055,Jefferson County,High Intensity
+2055,Jefferson County,Forest
+2055,Jefferson County,Agriculture
+2055,Skagit County,Open Space
+2055,Skagit County,Low Intensity
+2055,Skagit County,Medium Intensity
+2055,Skagit County,High Intensity
+2055,Skagit County,Forest
+2055,Skagit County,Agriculture
+2055,San Juan County,Open Space
+2055,San Juan County,Low Intensity
+2055,San Juan County,Medium Intensity
+2055,San Juan County,High Intensity
+2055,San Juan County,Forest
+2055,San Juan County,Agriculture
+2055,Mason County,Open Space
+2055,Mason County,Low Intensity
+2055,Mason County,Medium Intensity
+2055,Mason County,High Intensity
+2055,Mason County,Forest
+2055,Mason County,Agriculture
+2055,Kitsap County,Open Space
+2055,Kitsap County,Low Intensity
+2055,Kitsap County,Medium Intensity
+2055,Kitsap County,High Intensity
+2055,Kitsap County,Forest
+2055,Kitsap County,Agriculture
+2065,Island County,Open Space
+2065,Island County,Low Intensity
+2065,Island County,Medium Intensity
+2065,Island County,High Intensity
+2065,Island County,Forest
+2065,Island County,Agriculture
+2065,Clallam County,Open Space
+2065,Clallam County,Low Intensity
+2065,Clallam County,Medium Intensity
+2065,Clallam County,High Intensity
+2065,Clallam County,Forest
+2065,Clallam County,Agriculture
+2065,King County,Open Space
+2065,King County,Low Intensity
+2065,King County,Medium Intensity
+2065,King County,High Intensity
+2065,King County,Forest
+2065,King County,Agriculture
+2065,Snohomish County,Open Space
+2065,Snohomish County,Low Intensity
+2065,Snohomish County,Medium Intensity
+2065,Snohomish County,High Intensity
+2065,Snohomish County,Forest
+2065,Snohomish County,Agriculture
+2065,Whatcom County,Open Space
+2065,Whatcom County,Low Intensity
+2065,Whatcom County,Medium Intensity
+2065,Whatcom County,High Intensity
+2065,Whatcom County,Forest
+2065,Whatcom County,Agriculture
+2065,Pierce County,Open Space
+2065,Pierce County,Low Intensity
+2065,Pierce County,Medium Intensity
+2065,Pierce County,High Intensity
+2065,Pierce County,Forest
+2065,Pierce County,Agriculture
+2065,Thurston County,Open Space
+2065,Thurston County,Low Intensity
+2065,Thurston County,Medium Intensity
+2065,Thurston County,High Intensity
+2065,Thurston County,Forest
+2065,Thurston County,Agriculture
+2065,Jefferson County,Open Space
+2065,Jefferson County,Low Intensity
+2065,Jefferson County,Medium Intensity
+2065,Jefferson County,High Intensity
+2065,Jefferson County,Forest
+2065,Jefferson County,Agriculture
+2065,Skagit County,Open Space
+2065,Skagit County,Low Intensity
+2065,Skagit County,Medium Intensity
+2065,Skagit County,High Intensity
+2065,Skagit County,Forest
+2065,Skagit County,Agriculture
+2065,San Juan County,Open Space
+2065,San Juan County,Low Intensity
+2065,San Juan County,Medium Intensity
+2065,San Juan County,High Intensity
+2065,San Juan County,Forest
+2065,San Juan County,Agriculture
+2065,Mason County,Open Space
+2065,Mason County,Low Intensity
+2065,Mason County,Medium Intensity
+2065,Mason County,High Intensity
+2065,Mason County,Forest
+2065,Mason County,Agriculture
+2065,Kitsap County,Open Space
+2065,Kitsap County,Low Intensity
+2065,Kitsap County,Medium Intensity
+2065,Kitsap County,High Intensity
+2065,Kitsap County,Forest
+2065,Kitsap County,Agriculture
+2075,Island County,Open Space
+2075,Island County,Low Intensity
+2075,Island County,Medium Intensity
+2075,Island County,High Intensity
+2075,Island County,Forest
+2075,Island County,Agriculture
+2075,Clallam County,Open Space
+2075,Clallam County,Low Intensity
+2075,Clallam County,Medium Intensity
+2075,Clallam County,High Intensity
+2075,Clallam County,Forest
+2075,Clallam County,Agriculture
+2075,King County,Open Space
+2075,King County,Low Intensity
+2075,King County,Medium Intensity
+2075,King County,High Intensity
+2075,King County,Forest
+2075,King County,Agriculture
+2075,Snohomish County,Open Space
+2075,Snohomish County,Low Intensity
+2075,Snohomish County,Medium Intensity
+2075,Snohomish County,High Intensity
+2075,Snohomish County,Forest
+2075,Snohomish County,Agriculture
+2075,Whatcom County,Open Space
+2075,Whatcom County,Low Intensity
+2075,Whatcom County,Medium Intensity
+2075,Whatcom County,High Intensity
+2075,Whatcom County,Forest
+2075,Whatcom County,Agriculture
+2075,Pierce County,Open Space
+2075,Pierce County,Low Intensity
+2075,Pierce County,Medium Intensity
+2075,Pierce County,High Intensity
+2075,Pierce County,Forest
+2075,Pierce County,Agriculture
+2075,Thurston County,Open Space
+2075,Thurston County,Low Intensity
+2075,Thurston County,Medium Intensity
+2075,Thurston County,High Intensity
+2075,Thurston County,Forest
+2075,Thurston County,Agriculture
+2075,Jefferson County,Open Space
+2075,Jefferson County,Low Intensity
+2075,Jefferson County,Medium Intensity
+2075,Jefferson County,High Intensity
+2075,Jefferson County,Forest
+2075,Jefferson County,Agriculture
+2075,Skagit County,Open Space
+2075,Skagit County,Low Intensity
+2075,Skagit County,Medium Intensity
+2075,Skagit County,High Intensity
+2075,Skagit County,Forest
+2075,Skagit County,Agriculture
+2075,San Juan County,Open Space
+2075,San Juan County,Low Intensity
+2075,San Juan County,Medium Intensity
+2075,San Juan County,High Intensity
+2075,San Juan County,Forest
+2075,San Juan County,Agriculture
+2075,Mason County,Open Space
+2075,Mason County,Low Intensity
+2075,Mason County,Medium Intensity
+2075,Mason County,High Intensity
+2075,Mason County,Forest
+2075,Mason County,Agriculture
+2075,Kitsap County,Open Space
+2075,Kitsap County,Low Intensity
+2075,Kitsap County,Medium Intensity
+2075,Kitsap County,High Intensity
+2075,Kitsap County,Forest
+2075,Kitsap County,Agriculture
+2085,Island County,Open Space
+2085,Island County,Low Intensity
+2085,Island County,Medium Intensity
+2085,Island County,High Intensity
+2085,Island County,Forest
+2085,Island County,Agriculture
+2085,Clallam County,Open Space
+2085,Clallam County,Low Intensity
+2085,Clallam County,Medium Intensity
+2085,Clallam County,High Intensity
+2085,Clallam County,Forest
+2085,Clallam County,Agriculture
+2085,King County,Open Space
+2085,King County,Low Intensity
+2085,King County,Medium Intensity
+2085,King County,High Intensity
+2085,King County,Forest
+2085,King County,Agriculture
+2085,Snohomish County,Open Space
+2085,Snohomish County,Low Intensity
+2085,Snohomish County,Medium Intensity
+2085,Snohomish County,High Intensity
+2085,Snohomish County,Forest
+2085,Snohomish County,Agriculture
+2085,Whatcom County,Open Space
+2085,Whatcom County,Low Intensity
+2085,Whatcom County,Medium Intensity
+2085,Whatcom County,High Intensity
+2085,Whatcom County,Forest
+2085,Whatcom County,Agriculture
+2085,Pierce County,Open Space
+2085,Pierce County,Low Intensity
+2085,Pierce County,Medium Intensity
+2085,Pierce County,High Intensity
+2085,Pierce County,Forest
+2085,Pierce County,Agriculture
+2085,Thurston County,Open Space
+2085,Thurston County,Low Intensity
+2085,Thurston County,Medium Intensity
+2085,Thurston County,High Intensity
+2085,Thurston County,Forest
+2085,Thurston County,Agriculture
+2085,Jefferson County,Open Space
+2085,Jefferson County,Low Intensity
+2085,Jefferson County,Medium Intensity
+2085,Jefferson County,High Intensity
+2085,Jefferson County,Forest
+2085,Jefferson County,Agriculture
+2085,Skagit County,Open Space
+2085,Skagit County,Low Intensity
+2085,Skagit County,Medium Intensity
+2085,Skagit County,High Intensity
+2085,Skagit County,Forest
+2085,Skagit County,Agriculture
+2085,San Juan County,Open Space
+2085,San Juan County,Low Intensity
+2085,San Juan County,Medium Intensity
+2085,San Juan County,High Intensity
+2085,San Juan County,Forest
+2085,San Juan County,Agriculture
+2085,Mason County,Open Space
+2085,Mason County,Low Intensity
+2085,Mason County,Medium Intensity
+2085,Mason County,High Intensity
+2085,Mason County,Forest
+2085,Mason County,Agriculture
+2085,Kitsap County,Open Space
+2085,Kitsap County,Low Intensity
+2085,Kitsap County,Medium Intensity
+2085,Kitsap County,High Intensity
+2085,Kitsap County,Forest
+2085,Kitsap County,Agriculture
+2095,Island County,Open Space
+2095,Island County,Low Intensity
+2095,Island County,Medium Intensity
+2095,Island County,High Intensity
+2095,Island County,Forest
+2095,Island County,Agriculture
+2095,Clallam County,Open Space
+2095,Clallam County,Low Intensity
+2095,Clallam County,Medium Intensity
+2095,Clallam County,High Intensity
+2095,Clallam County,Forest
+2095,Clallam County,Agriculture
+2095,King County,Open Space
+2095,King County,Low Intensity
+2095,King County,Medium Intensity
+2095,King County,High Intensity
+2095,King County,Forest
+2095,King County,Agriculture
+2095,Snohomish County,Open Space
+2095,Snohomish County,Low Intensity
+2095,Snohomish County,Medium Intensity
+2095,Snohomish County,High Intensity
+2095,Snohomish County,Forest
+2095,Snohomish County,Agriculture
+2095,Whatcom County,Open Space
+2095,Whatcom County,Low Intensity
+2095,Whatcom County,Medium Intensity
+2095,Whatcom County,High Intensity
+2095,Whatcom County,Forest
+2095,Whatcom County,Agriculture
+2095,Pierce County,Open Space
+2095,Pierce County,Low Intensity
+2095,Pierce County,Medium Intensity
+2095,Pierce County,High Intensity
+2095,Pierce County,Forest
+2095,Pierce County,Agriculture
+2095,Thurston County,Open Space
+2095,Thurston County,Low Intensity
+2095,Thurston County,Medium Intensity
+2095,Thurston County,High Intensity
+2095,Thurston County,Forest
+2095,Thurston County,Agriculture
+2095,Jefferson County,Open Space
+2095,Jefferson County,Low Intensity
+2095,Jefferson County,Medium Intensity
+2095,Jefferson County,High Intensity
+2095,Jefferson County,Forest
+2095,Jefferson County,Agriculture
+2095,Skagit County,Open Space
+2095,Skagit County,Low Intensity
+2095,Skagit County,Medium Intensity
+2095,Skagit County,High Intensity
+2095,Skagit County,Forest
+2095,Skagit County,Agriculture
+2095,San Juan County,Open Space
+2095,San Juan County,Low Intensity
+2095,San Juan County,Medium Intensity
+2095,San Juan County,High Intensity
+2095,San Juan County,Forest
+2095,San Juan County,Agriculture
+2095,Mason County,Open Space
+2095,Mason County,Low Intensity
+2095,Mason County,Medium Intensity
+2095,Mason County,High Intensity
+2095,Mason County,Forest
+2095,Mason County,Agriculture
+2095,Kitsap County,Open Space
+2095,Kitsap County,Low Intensity
+2095,Kitsap County,Medium Intensity
+2095,Kitsap County,High Intensity
+2095,Kitsap County,Forest
+2095,Kitsap County,Agriculture
