@@ -4,31 +4,32 @@ from shiny import App, reactive, render, ui
 from functools import lru_cache
 
 #TODO look into shiny download data
+#TODO change all the links 
 # Hydrologic Timeseries
 river_files = {
-    "Pullayup": "https://uw-psi.github.io/shinyvelma/data/Pullayup.csv",
-    "Snohomish": "https://uw-psi.github.io/shinyvelma/data/Snohomish.csv",
-    "Green": "https://uw-psi.github.io/shinyvelma/data/Green.csv",
-    "Samish": "https://uw-psi.github.io/shinyvelma/data/Sammish.csv",
-    "Stillaguamish": "https://uw-psi.github.io/shinyvelma/data/Stillaguamish.csv",
-    "Hoko": "https://uw-psi.github.io/shinyvelma/data/Hoko.csv",
-    "Elwha": "https://uw-psi.github.io/shinyvelma/data/Elwha.csv",
-    "Deschutes": "https://uw-psi.github.io/shinyvelma/data/Deschutes.csv",
+    "Pullayup": "https://uw-psi.github.io/shinyapp/data/Pullayup.csv",
+    "Snohomish": "https://uw-psi.github.io/shinyapp/data/Snohomish.csv",
+    "Green": "https://uw-psi.github.io/shinyapp/data/Green.csv",
+    "Samish": "https://uw-psi.github.io/shinyapp/data/Sammish.csv",
+    "Stillaguamish": "https://uw-psi.github.io/shinyapp/data/Stillaguamish.csv",
+    "Hoko": "https://uw-psi.github.io/shinyapp/data/Hoko.csv",
+    "Elwha": "https://uw-psi.github.io/shinyapp/data/Elwha.csv",
+    "Deschutes": "https://uw-psi.github.io/shinyapp/data/Deschutes.csv",
 }
 sample_df = pd.read_csv(river_files["Pullayup"])
 hydro_variable_options = [col for col in sample_df.columns if col not in ("Year", "Day", "Loop", "Step")]
 #velma datasets
 velma_files = {
-    "flow2011": "https://uw-psi.github.io/shinyvelma/data/velma_monthly_flow_stats_2011.csv"
-    # "temp2011": "https://uw-psi.github.io/shinyvelma/data/velma_monthly_temp_stats_2011.csv",
-    # "totN2011": "https://uw-psi.github.io/shinyvelma/data/velma_monthly_totN_stats_2011.csv",
-    # "totC2011": "https://uw-psi.github.io/shinyvelma/data/velma_monthly_totC_stats_2011.csv"
+    "flow2011": "https://uw-psi.github.io/shinyapp/data/velma_monthly_flow_stats_2011.csv"
+    # "temp2011": "https://uw-psi.github.io/shinyapp/data/velma_monthly_temp_stats_2011.csv",
+    # "totN2011": "https://uw-psi.github.io/shinyapp/data/velma_monthly_totN_stats_2011.csv",
+    # "totC2011": "https://uw-psi.github.io/shinyapp/data/velma_monthly_totC_stats_2011.csv"
 }
 # Landcover Change Datasets
 lcc_data = {
-    'counties': "https://uw-psi.github.io/shinyvelma/data/diffed_counties.csv",
-    'wrias': "https://uw-psi.github.io/shinyvelma/data/diffed_wrias.csv",
-    'velma': "https://uw-psi.github.io/shinyvelma/data/diffed_velma.csv"
+    'counties': "https://uw-psi.github.io/shinyapp/data/diffed_counties.csv",
+    'wrias': "https://uw-psi.github.io/shinyapp/data/diffed_wrias.csv",
+    'velma': "https://uw-psi.github.io/shinyapp/data/diffed_velma.csv"
 }
 region_type_options = ["County", "WRIA", "VELMA watershed"]
 
