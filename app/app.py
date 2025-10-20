@@ -3,8 +3,7 @@ import matplotlib.pyplot as plt
 from shiny import App, reactive, render, ui
 from functools import lru_cache
 
-#TODO look into shiny download data
-#TODO change all the links 
+
 # Hydrologic Timeseries
 river_files = {
     "Pullayup": "https://uw-psi.github.io/shinyapp/data/Pullayup.csv",
