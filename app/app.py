@@ -19,10 +19,11 @@ sample_df = pd.read_csv(river_files["Pullayup"])
 hydro_variable_options = [col for col in sample_df.columns if col not in ("Year", "Day", "Loop", "Step")]
 #velma datasets
 velma_files = {
-    "flow2011": "https://uw-psi.github.io/shinyapp/data/velma_monthly_flow_stats_2011.csv"
+    "flow2011": "https://uw-psi.github.io/shinyapp/data/velma_monthly_flow_stats_2011.csv",
+    "totC2011": "https://uw-psi.github.io/shinyapp/data/velma_monthly_C_stats_2011.csv"
     # "temp2011": "https://uw-psi.github.io/shinyapp/data/velma_monthly_temp_stats_2011.csv",
     # "totN2011": "https://uw-psi.github.io/shinyapp/data/velma_monthly_totN_stats_2011.csv",
-    # "totC2011": "https://uw-psi.github.io/shinyapp/data/velma_monthly_totC_stats_2011.csv"
+
 }
 # Landcover Change Datasets
 lcc_data = {
@@ -93,12 +94,12 @@ app_ui = ui.page_fluid(
                     ui.input_radio_buttons(
                         "velma_var",
                         "Select Variable",
-                        choices=[
-                            ("flow2011", "Flow"),
-                            ("temp2011", "Temperature"),
-                            ("totN2011", "Total Nitrogen"),
-                            ("totC2011", "Total Carbon"),
-                        ]
+                        choices={
+                            "flow2011": "Flow",
+                            "temp2011": "Temperature",
+                            "totN2011": "Total Nitrogen",
+                            "totC2011": "Total Carbon"
+                        }
                     ),
                     ui.input_select("velma_watershed", "Select Watershed", choices=pd.read_csv(velma_files["flow2011"])["Watershed"].unique().tolist())
                 ),
@@ -151,7 +152,7 @@ app_ui = ui.page_fluid(
 )
  ######################### Server #########################
  # The server function defines all reactive computations and plots that respond to user input in the UI.
- #TODO comment on the things you would change when duplicating a visual
+ 
 def server(input, output, session):
     ### landcover dashboard fuctions ###
     @render.ui
