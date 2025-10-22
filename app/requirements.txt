@@ -1,7 +1,3 @@
 pandas
-matplotlib.pyplot
-shiny.App 
-shiny.reactive
-shiny.render
-shiny.ui
-functools.lru_cache
+matplotlib
+shiny
