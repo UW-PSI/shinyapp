@@ -3,6 +3,24 @@ import matplotlib.pyplot as plt
 from shiny import App, reactive, render, ui
 from functools import lru_cache
 
+try:
+    # This will succeed only in the browser (Pyodide)
+    from shinylive import open_url
+    IN_BROWSER = True
+except ImportError:
+    IN_BROWSER = False
+
+def read_csv_url(url, **kwargs):
+    """
+    Load a CSV either locally or in the browser via Pyodide.
+    """
+    if IN_BROWSER:
+        # Use Pyodide-friendly open_url
+        with open_url(url) as f:
+            return pd.read_csv(f, **kwargs)
+    else:
+        # Normal local read
+        return pd.read_csv(url, **kwargs)
 
 # Hydrologic Timeseries
 river_files = {
@@ -15,7 +33,7 @@ river_files = {
     "Elwha": "https://uw-psi.github.io/shinyapp/data/Elwha.csv",
     "Deschutes": "https://uw-psi.github.io/shinyapp/data/Deschutes.csv",
 }
-sample_df = pd.read_csv(river_files["Pullayup"])
+sample_df = read_csv_url(river_files["Pullayup"])
 hydro_variable_options = [col for col in sample_df.columns if col not in ("Year", "Day", "Loop", "Step")]
 #velma datasets
 velma_files = {
@@ -45,7 +63,7 @@ land_cover_colors = {
 #cache datasets to avoid redownloading
 @lru_cache
 def load_lcc_dataset(name):
-    return pd.read_csv(lcc_data[name])
+    return read_csv_url(lcc_data[name])
 
 #####edit here (1 and 2) if you need to make new drop down labels ######
 #1) load data
@@ -101,7 +119,7 @@ app_ui = ui.page_fluid(
                             "totC2011": "Total Carbon"
                         }
                     ),
-                    ui.input_select("velma_watershed", "Select Watershed", choices=pd.read_csv(velma_files["flow2011"])["Watershed"].unique().tolist())
+                    ui.input_select("velma_watershed", "Select Watershed", choices=read_csv_url(velma_files["flow2011"])["Watershed"].unique().tolist())
                 ),
                 ui.layout_columns(
                     ui.card(
@@ -246,7 +264,7 @@ def server(input, output, session):
     @reactive.Calc
     def hydro_data():
         file_path = river_files[input.river()]
-        return pd.read_csv(file_path)
+        return read_csv_url(file_path)
 
     @reactive.Calc
     def hydro_summary():
