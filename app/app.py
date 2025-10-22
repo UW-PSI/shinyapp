@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from shiny import App, reactive, render, ui
 from functools import lru_cache
-from pyodide.http import open_url
+
 
 # Hydrologic Timeseries
 river_files = {
@@ -15,7 +15,7 @@ river_files = {
     "Elwha": "https://uw-psi.github.io/shinyapp/data/Elwha.csv",
     "Deschutes": "https://uw-psi.github.io/shinyapp/data/Deschutes.csv",
 }
-sample_df = pd.pd.read_csv(open_url(river_files["Pullayup"]))
+sample_df = pd.read_csv(river_files["Pullayup"])
 hydro_variable_options = [col for col in sample_df.columns if col not in ("Year", "Day", "Loop", "Step")]
 #velma datasets
 velma_files = {
