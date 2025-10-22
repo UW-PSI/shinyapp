@@ -6,7 +6,10 @@ on:
       - "app/**"              # only rebuild when app/ changes
       - ".github/workflows/build-shinylive.yml"
   workflow_dispatch:           # allow manual trigger from GitHub Actions tab
-
+  
+permissions:
+  contents: write
+  
 jobs:
   build:
     runs-on: ubuntu-latest
