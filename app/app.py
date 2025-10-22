@@ -21,34 +21,56 @@ def read_csv_url(url, **kwargs):
     else:
         # Normal local read
         return pd.read_csv(url, **kwargs)
-
-# Hydrologic Timeseries
-river_files = {
-    "Pullayup": "https://uw-psi.github.io/shinyapp/data/Pullayup.csv",
-    "Snohomish": "https://uw-psi.github.io/shinyapp/data/Snohomish.csv",
-    "Green": "https://uw-psi.github.io/shinyapp/data/Green.csv",
-    "Samish": "https://uw-psi.github.io/shinyapp/data/Sammish.csv",
-    "Stillaguamish": "https://uw-psi.github.io/shinyapp/data/Stillaguamish.csv",
-    "Hoko": "https://uw-psi.github.io/shinyapp/data/Hoko.csv",
-    "Elwha": "https://uw-psi.github.io/shinyapp/data/Elwha.csv",
-    "Deschutes": "https://uw-psi.github.io/shinyapp/data/Deschutes.csv",
-}
-sample_df = read_csv_url(river_files["Pullayup"])
-hydro_variable_options = [col for col in sample_df.columns if col not in ("Year", "Day", "Loop", "Step")]
-#velma datasets
-velma_files = {
+if not IN_BROWSER:
+    # Hydrologic Timeseries
+    river_files = {
+        "Pullayup": "https://uw-psi.github.io/shinyapp/data/Pullayup.csv",
+        "Snohomish": "https://uw-psi.github.io/shinyapp/data/Snohomish.csv",
+        "Green": "https://uw-psi.github.io/shinyapp/data/Green.csv",
+        "Samish": "https://uw-psi.github.io/shinyapp/data/Sammish.csv",
+        "Stillaguamish": "https://uw-psi.github.io/shinyapp/data/Stillaguamish.csv",
+        "Hoko": "https://uw-psi.github.io/shinyapp/data/Hoko.csv",
+        "Elwha": "https://uw-psi.github.io/shinyapp/data/Elwha.csv",
+        "Deschutes": "https://uw-psi.github.io/shinyapp/data/Deschutes.csv",
+    }
+    velma_files = {
     "flow2011": "https://uw-psi.github.io/shinyapp/data/velma_monthly_flow_stats_2011.csv",
     "totC2011": "https://uw-psi.github.io/shinyapp/data/velma_monthly_C_stats_2011.csv"
     # "temp2011": "https://uw-psi.github.io/shinyapp/data/velma_monthly_temp_stats_2011.csv",
     # "totN2011": "https://uw-psi.github.io/shinyapp/data/velma_monthly_totN_stats_2011.csv",
-
-}
-# Landcover Change Datasets
-lcc_data = {
+    
+    }
+    lcc_data = {
     'counties': "https://uw-psi.github.io/shinyapp/data/diffed_counties.csv",
     'wrias': "https://uw-psi.github.io/shinyapp/data/diffed_wrias.csv",
     'velma': "https://uw-psi.github.io/shinyapp/data/diffed_velma.csv"
-}
+    }
+else :
+    river_files = {
+        "Pullayup": "data/Pullayup.csv",
+        "Snohomish": "data/Snohomish.csv",
+        "Green": "data/Green.csv",
+        "Samish": "data/Sammish.csv",
+        "Stillaguamish": "data/Stillaguamish.csv",
+        "Hoko": "data/Hoko.csv",
+        "Elwha": "data/Elwha.csv",
+        "Deschutes": "data/Deschutes.csv",
+    }
+    velma_files = {
+    "flow2011": "data/velma_monthly_flow_stats_2011.csv",
+    "totC2011": "data/velma_monthly_C_stats_2011.csv"
+    # "temp2011": "data/velma_monthly_temp_stats_2011.csv",
+    # "totN2011": "data/velma_monthly_totN_stats_2011.csv",
+    }
+    lcc_data = {
+    'counties': "data/diffed_counties.csv",
+    'wrias': "data/diffed_wrias.csv",
+    'velma': "data/diffed_velma.csv"
+    }
+
+sample_df = read_csv_url(river_files["Pullayup"])
+hydro_variable_options = [col for col in sample_df.columns if col not in ("Year", "Day", "Loop", "Step")]
+
 region_type_options = ["County", "WRIA", "VELMA watershed"]
 
 land_cover_colors = {
