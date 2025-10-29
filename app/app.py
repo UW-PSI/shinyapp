@@ -10,17 +10,19 @@ try:
 except ImportError:
     IN_BROWSER = False
 
-def read_csv_url(url, **kwargs):
+def read_csv_url(url):
     """
     Load a CSV either locally or in the browser via Pyodide.
     """
-    if IN_BROWSER:
-        # Use Pyodide-friendly open_url
-        with open_url(url) as f:
-            return pd.read_csv(f, **kwargs)
-    else:
-        # Normal local read
-        return pd.read_csv(url, **kwargs)
+    return pd.read_csv(url)
+    # if IN_BROWSER:
+    #     # Use Pyodide-friendly open_url
+    #     with open_url(url) as f:
+    #         return pd.read_csv(f)
+    # else:
+    #     # Normal local read
+    #     return pd.read_csv(url)
+    
 if not IN_BROWSER:
     # Hydrologic Timeseries
     river_files = {
@@ -141,7 +143,9 @@ app_ui = ui.page_fluid(
                             "totC2011": "Total Carbon"
                         }
                     ),
-                    ui.input_select("velma_watershed", "Select Watershed", choices=read_csv_url(velma_files["flow2011"])["Watershed"].unique().tolist())
+                    ui.input_select("velma_watershed", "Select Watershed", choices=read_csv_url(velma_files["flow2011"])["Watershed"].unique().tolist()),
+                    ui.input_select("velma_decade", "Select Decade", choices=["2010-2019"] #this is how you'd add the rest of the decades once they exist: , "2021-2030", "2031-2040", "2041-2050", "2051-2060", "2061-2070", "2071-2080", "2081-2090", "2091-2100"] )
+                    #in the future, create separate visual for the yearly timeseries trend
                 ),
                 ui.layout_columns(
                     ui.card(
@@ -189,7 +193,7 @@ app_ui = ui.page_fluid(
             )   
         )
     ) 
-)
+))
  ######################### Server #########################
  # The server function defines all reactive computations and plots that respond to user input in the UI.
 def server(input, output, session):
@@ -204,6 +208,7 @@ def server(input, output, session):
             return ui.input_select("region_name", "Select WRIA", choices=wria_list)
 
     def make_velma_plot(df, watershed, variable):
+    #TODO no need for filtering out decades (display every 'decade') 
         df = df[df["Watershed"] == watershed]
         pivot = df.pivot_table(
             index="Month",
