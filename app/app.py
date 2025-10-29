@@ -22,7 +22,7 @@ def read_csv_url(url):
     # else:
     #     # Normal local read
     #     return pd.read_csv(url)
-    
+
 if not IN_BROWSER:
     # Hydrologic Timeseries
     river_files = {
@@ -105,8 +105,9 @@ velma_list = df_velma["Feature_Name"].unique().tolist()
 
 app_ui = ui.page_fluid(
     ui.h2("PSIMF Dashboard"),
-    #------ landcover dashboard tab ------
+
     ui.navset_tab(
+        #------ Landcover Dashboard tab ------
         ui.nav_panel(
             "Landcover Dashboard",
             ui.layout_sidebar(
@@ -126,7 +127,6 @@ app_ui = ui.page_fluid(
                 )
             )
         ),
-        #----------------
 
         #------ VELMA Monthly Explorer tab ------
         ui.nav_panel(
@@ -143,9 +143,9 @@ app_ui = ui.page_fluid(
                             "totC2011": "Total Carbon"
                         }
                     ),
-                    ui.input_select("velma_watershed", "Select Watershed", choices=read_csv_url(velma_files["flow2011"])["Watershed"].unique().tolist()),
-                    ui.input_select("velma_decade", "Select Decade", choices=["2010-2019"] #this is how you'd add the rest of the decades once they exist: , "2021-2030", "2031-2040", "2041-2050", "2051-2060", "2061-2070", "2071-2080", "2081-2090", "2091-2100"] )
-                    #in the future, create separate visual for the yearly timeseries trend
+                    ui.input_select("velma_watershed", "Select Watershed",
+                                    choices=read_csv_url(velma_files["flow2011"])["Watershed"].unique().tolist()),
+                    ui.input_select("velma_decade", "Select Decade", choices=["2010-2019"])
                 ),
                 ui.layout_columns(
                     ui.card(
@@ -155,7 +155,7 @@ app_ui = ui.page_fluid(
                 )
             )
         ),
-        #----------------
+
         #------ Hydrologic Explorer tab ------
         ui.nav_panel(
             "Hydrologic Explorer",
@@ -172,7 +172,7 @@ app_ui = ui.page_fluid(
                 )
             )
         ),
-        #----------------
+
         #------ Embedded Visuals ------
         ui.nav_panel(
             "VELMA SSM Visual",
@@ -190,10 +190,11 @@ app_ui = ui.page_fluid(
                 width="100%",
                 height="600",
                 style="border:none;"
-            )   
+            )
         )
-    ) 
-))
+    )
+)
+
  ######################### Server #########################
  # The server function defines all reactive computations and plots that respond to user input in the UI.
 def server(input, output, session):
